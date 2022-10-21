@@ -1,0 +1,77 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00f2fe;
+    height: 90vh;
+}
+
+.levels{
+    position: relative;
+    /* top:0; */
+    background-color: orange;
+    height: 4vh;
+    width: 100px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 2px;
+}
+.card{
+    position: relative;
+    width: 300px;
+    max-height: 40vh;
+    border-radius:5px;
+    box-shadow: 0px 5px 20px rgb(0,0,0,0.5);
+    transition: 0.3s;
+    padding: 10px;
+    background: #fff;
+    cursor: pointer;
+}
+button{
+    font-family: 'Courier New', Courier, monospace;
+    cursor: pointer;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    width: 150px;
+    height: 10vh;
+    margin: 5px;
+    background-color: #58c4ca;
+}
+
+.content-btn-primary{
+    overflow: hidden;
+    transform: translate(-200px,-100px);
+    opacity: 0;
+    transition:0.3s;
+    display: flex;
+    justify-content: center;
+}
+
+
+.content-btn-secondary{
+    transform: translate(200px,-100px);
+    opacity: 0;
+    transition:0.3s;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+.card:hover{
+    transform: scale(1.08);
+    background-color: rgb(0,0, 0,0.5);
+    /* color: #fff;
+    opacity: .1; */
+}
+
+.card:hover > .content-btn-primary{
+    transform: translate(0px,-100px); 
+     opacity: 1;
+}
+
+.card:hover > .content-btn-secondary{
+    transform:translate(0px,-100px); 
+    opacity: 1;
+}
