@@ -1,19 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
 body{
     font-family: 'Dancing Script', cursive;
     margin: 0;
     padding: 0;
+    /* background: rgba(32, 30, 32, 0.977); */
+    background-color:rgba(169, 160, 173, 0.721);;
 }
 
 :root{
     box-sizing: border-box;
 }
 
+.heading{
+    text-align: center;
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
 .timer{
+    
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    /* height: 90vh; */
 
 }
 #days,#hours,#mins,#secs{
@@ -25,6 +38,16 @@ body{
     margin: 25px;
     padding: 15px;
     text-align: center;
+    /* box-shadow:
+    inset 0 0 60px whitesmoke,
+    inset 20px 0 80px #f0f,
+    inset -20px 0 80px #0ff,
+    inset 20px 0 300px #f0f,
+    inset -20px 0 300px #0ff,
+    0 0 50px #fff,
+    -10px 0 80px #f0f,
+    10px 0 80px #0ff; */
+
     box-shadow: 0px 5px 15px 2px rgba(100, 166, 160, 0.269);
     border:none;
     border-radius: 10px;
