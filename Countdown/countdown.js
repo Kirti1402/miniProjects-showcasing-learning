@@ -18,13 +18,31 @@ function countdown(){
     var days = Math.floor(secondsDiff / (1000 * 60 * 60 * 24)) //into days
     console.log(secs , mins, hours, days);
 
-    daysDiv.innerText = days;
-    hourDiv.innerText = hours;
-    minDiv.innerText = mins;
-    secDiv.innerText = secs;
-
-
-
+    //display to UI
+    //days
+    if(days <9){
+        daysDiv.innerText = 'Days \n'+'0'+days;
+    }else{
+        daysDiv.innerText = 'Days \n'+days;
+    }
+    //hours
+    if(hours <9){
+        hourDiv.innerText = 'Hours \n'+'0'+hours;
+    }else{
+        hourDiv.innerText = 'Hours \n'+hours;
+    }
+    //minutes
+    if(mins <9){
+        minDiv.innerText = 'Minutes \n'+'0'+mins;
+    }else{
+        minDiv.innerText = 'Minutes \n'+mins;
+    }
+    //secons
+    if(secs <9){
+        secDiv.innerText = 'Seconds \n'+'0'+secs;
+    }else{
+        secDiv.innerText = 'Seconds \n'+secs;
+    }
 }
 
 // countdown()
