@@ -22,13 +22,13 @@ function timer(){
         minutes++
     }
 
-    if(minutes < 9  && seconds>9){
+    if(minutes <= 9  && seconds > 9){
         console.log('first if')
         timerdisplay.innerText = '0'+minutes+':'+seconds; 
-    }else if(minutes < 9 && seconds < 9){
+    }else if(minutes <= 9 && seconds <= 9){
         console.log('second if')
         timerdisplay.innerText = '0'+minutes+':'+'0'+seconds; 
-    }else if(seconds < 9){
+    }else if(seconds <= 9){
         console.log('third if')
         timerdisplay.innerText = minutes+':'+'0'+seconds; 
     }else{

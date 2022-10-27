@@ -1,9 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+
 body {
   margin: 0;
   padding: 0;
+  background-color: #06283D;
+}
+
+h1{
+  text-align: center;
+  color: white;
+  margin-top: 100px;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 .container {
-  border: 2px solid;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -17,7 +27,16 @@ body {
 }
 
 p{
-
+  font-weight: 700;
+  font-family: 'Dosis', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:#F6F6C9;
+  box-shadow: 0px 5px 20px #f8f2e4;
+  border-radius: 100%;
+  width: 100px;
+  height: 20vh;
   position: absolute;
   top: 30%;
   left: 50%;
@@ -27,6 +46,11 @@ p{
 }
 
 .btn {
+  font-weight: 700;
+  font-family: 'Dosis', sans-serif;
+  background-color: #BAD1C2;
+  border: none;
+  border-radius: 5px;
   width: 80px;
   height: 10vh;
   margin: 8px;
