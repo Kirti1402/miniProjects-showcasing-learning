@@ -46,11 +46,10 @@ button{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    padding: 5px;
 }
 .card{
-    /* position: relative; */
     word-wrap: break-word;
-    /* position: relative; */
     text-align: center;
     margin: 5px;
     width: 300px;
