@@ -6,7 +6,7 @@ function countdown(){
     var currentDate = new Date();
     console.log(currentDate);
 
-    var futureDate = Date.parse('Jan 01 2023 00:00:00');
+    var futureDate = Date.parse('Jan 01 2024 00:00:00');
     console.log(futureDate)
 
     var secondsDiff = futureDate - currentDate;
